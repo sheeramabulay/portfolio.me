@@ -1,0 +1,20 @@
+/* Custom by Alexander Hipe */
+.container-fluid {
+  margin: 0 0;
+  padding: 0px 0px;
+}
+.custom-img {
+  width: 10%;
+}
+.custom-m {
+  margin-top: -15px;
+}
+.custom-btn-nav {
+  margin-right: 10px;
+}
+.signup-form {
+  padding: 20px;
+}
+.container .custom-cont {
+  text-align: left;
+}

@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}  
+
+header{ 
+    background-color:rgba(29, 184, 231, 0.87);
+    color: rgb(12, 12, 12);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/*navbar styling*/
+.navbar-brand img{  
+    height: 4rem;   
+}
+
+.navbar{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    background-color: gray;
+}
+.nav-item{
+    padding: .5rem;
+}
+.nav-link{
+    color: white!important;
+}
+.nav-link.active,
+.nav-link:hover {
+    color:#4981b3!important;
+}
+.navbar .navbar-toggler{
+    background-color: rgba(26, 25, 25, 0.9);
+}
+
+/*Resume styling*/
+.container-resume
+{   
+   position: center;
+    width: 500%;
+    max-width: 1000px;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,1);
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-left: 150px;
+    
+    
+}
+.container-resume .left_side
+{
+    position: relative;
+    background-color: rgb(80, 78, 80);
+    padding: 40px;
+    
+}
+
+.profilebox
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profilebox .imagebox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+}
+.profilebox .imagebox img
+{
+    position:absolute;
+    top: 1;
+    left: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profilebox h2
+{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.40em;
+}
+.profilebox h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contact
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact ul
+{
+    position: relative;
+
+}
+.contact ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact ul li .icon
+{
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    color:#03a9f0;
+}
+.contact ul li span
+{
+ color: white;
+ font-weight: 100;
+}
+
+.contact.education li
+{
+ margin-bottom: 15px;
+}
+.contact.education h5
+{
+ color: #03a9f0;
+ font-weight: 500;
+}
+.contact.education h4:nth-child(2)
+{
+    color: white;
+    font-weight: 300;
+}
+.contact.education h4
+{
+    color: white;
+    font-weight: 300;
+}
+.contact.language span
+{
+    color: white;
+    font-weight: 500;
+}
+.contact.language h4
+{
+    color: white;
+    font-weight: 300;
+}
+.container-resume .right_side
+{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;   
+}
+.about h3
+{
+    color: black;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+}
+.about.personal .box
+{
+display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about.personal .box .info
+{
+	 min-width: 150px;
+}
+.about.personal .box .info h5
+{
+	 color: #848c90;
+    font-weight: 600;
+}
+.about.personal .box .text h3
+{
+	text-transform: uppercase;
+ color: black;
+ font-size: 16px;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+}
+.about .box .year_company h5
+{
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+ text-transform: uppercase;
+ color: #2a7da2;
+ font-size: 16px;
+}
+.skill.pbox
+{
+    position: relative;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skill .pbox h4
+{
+ text-transform: uppercase;
+ color: #848C99;
+ font-weight: 300;
+}
+.skill .pbox .percent
+{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #f0f0f0d2;
+}
+.skill .pbox .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f0;
+}
+.interest 
+{
+	margin-top: 50px;
+}
+.interest .list
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest .list li 
+{
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    margin: 10px 10px;
+}
+.interest .list li .icon
+{
+	display: inline-block;
+	color:#03a9f0;
+    font-size: 18px;
+	width: 30px;
+}
+
+/*about section styling*/
+section{
+    padding: 70px 0;
+}
+.about{
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title{
+    text-align: center;
+    font-family:'Ubuntu', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+    
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left-img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.about .about-content .right{
+    width: 45%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+.about .about-content .right .text span{
+    color: rgb(97, 118, 235);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+/*contact section styling*/
+.contact-form
+{
+    padding-left: 400px;
+    padding-top: 100px;
+    padding-right: 400px;
+}
+
+form{
+    margin: 20px;
+    
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border:1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    background-color: rgba(29, 184, 231, 0.87);
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.bitch
+{
+   border-radius: 40px;
+   color: rgb(12, 11, 11);
+   margin-top: 18px;
+   padding: 10px;
+   background-color: rgba(29, 184, 231, 0.87);
+   font-size: 12px;
+   border: none;
+   cursor: pointer;
+}
+.column-contact{
+  
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    background-color: rgba(29, 184, 231, 0.87);
+    margin: 30px;
+    align-items: center;
+
+}
+.lead{
+    text-align: center;
+    font-size: 500px;
+    color: rgb(10, 10, 12);
+    font-weight: 400px;
+}
+.text-center{
+    padding-top: 30px;
+    bottom: 40px;
+}
+
+/*footer styling*/
+footer{
+    background-color: #464442;
+    padding: 1rem 2rem 3rem;
+}
+
+footer img{
+    height: 5rem;
+    margin: 1.5rem 0;
+}
+footer p, footer a, .socket a{
+    color: white;
+    text-decoration: none;
+
+}
+
+footer .svg-inline--fa{
+    font-size: 2.3rem;
+}
+footer .svg-inline--fa:hover{
+    columns: #489de7;
+}
+
+/*sockect styling*/
+.socket{
+    background-color: #141414;
+    border-top: .1rem solid #2f42ec;
+}
+/*responsive media query start*/
+@media (max-width: 1199.98px){
+    .container {
+        text-align: center;
+        width: 0rem;
+      }
+    
+      .navbar {
+        flex-direction: column;
+      }
+    
+      nav ul {
+        flex-direction: column;
+      }
+    
+      nav li {
+        margin: 0.8em 0;
+      }
+    .container-resume{
+        width: auto;
+        height: inherit;
+       align-self: start;
+       flex-direction: inherit;
+       margin-left: 0rem;
+    }
+    
+}
+@media (max-width: 767.98px){
+
+}
+
+ 
