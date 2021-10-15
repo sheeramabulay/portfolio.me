@@ -362,10 +362,13 @@ display: flex;
     font-size: 500px;
     color: rgb(10, 10, 12);
     font-weight: 400px;
+    padding-left: 40px;
+    
 }
 .text-center{
     padding-top: 30px;
     bottom: 40px;
+    
 }
 /*skills styling*/
 .skillcard{
