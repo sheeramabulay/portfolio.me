@@ -568,8 +568,8 @@ footer .svg-inline--fa:hover{
     }
       /*resume*/
       .container-resume{
-        width: 0rem;
-        height: 2500px;
+        width: 500px;
+        height: 1000px;
         margin-left: 0rem;
        
     }
