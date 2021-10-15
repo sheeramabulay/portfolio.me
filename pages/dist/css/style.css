@@ -17,6 +17,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  font-family: 'Ubuntu',sans-serif;
 }
 
 /*navbar styling*/
@@ -302,60 +303,31 @@ display: flex;
 }
 
 /*about section styling*/
-section{
-    padding: 70px 0;
-}
-.about{
+.aboutcard{
+    background-color: rgba(0, 255, 255, 0.185);
+    margin-left: 200px;
+    height: 600px;
+    width: 1000px;
     font-family: 'Ubuntu', sans-serif;
+   
 }
-.about .title{
-    text-align: center;
-    font-family:'Ubuntu', sans-serif;
-}
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-top: 100px;
-    padding-right: 100px;
-    
-}
-.about .about-content .left{
-    width: 45%;
-}
-.about .about-content .left-img{
-    height: 400px;
+.aboutcard .imagebox{
+    padding-top: 20px;
     width: 400px;
-    object-fit: cover;
+    height: 400px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
-.about .about-content .right{
-    width: 45%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    
-}
-.about .about-content .right .text span{
-    color: rgb(97, 118, 235);
-}
-.about .about-content .right p{
-    text-align: justify;
-}
-/*contact section styling*/
-.contact-form
-{
-    padding-left: 400px;
-    padding-top: 100px;
-    padding-right: 400px;
+.aboutcard .col-md-8{
+    padding-left: 70px;
+    padding-top: 30px;
 }
 
-form{
-    margin: 20px;
-    
+/*contact section styling*/
+.aboutcard .card{
+    background-color: rgba(82, 185, 245, 0.795);
+    width: fit-content;
 }
 .input-field{
     width: 400px;
@@ -366,7 +338,7 @@ form{
     border:1px solid #777;
     border-radius: 14px;
     outline: none;
-    background-color: rgba(29, 184, 231, 0.87);
+    background-color: white;
 }
 .textarea-field{
     height: 150px;
@@ -376,24 +348,15 @@ form{
 {
    border-radius: 40px;
    color: rgb(12, 11, 11);
-   margin-top: 18px;
+   margin-top: 15px;
+   margin-left: 150px;
    padding: 10px;
-   background-color: rgba(29, 184, 231, 0.87);
+   background-color: rgba(31, 117, 230, 0.87);
    font-size: 12px;
    border: none;
    cursor: pointer;
 }
-.column-contact{
-  
-    padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 100px;
-    background-color: rgba(29, 184, 231, 0.87);
-    margin: 30px;
-    align-items: center;
 
-}
 .lead{
     text-align: center;
     font-size: 500px;
@@ -403,6 +366,60 @@ form{
 .text-center{
     padding-top: 30px;
     bottom: 40px;
+}
+/*skills styling*/
+.skillcard{
+    background-color: rgba(0, 255, 255, 0.185);
+    margin-left: 70px;
+    height: 600px;
+    width: 1200px;
+    padding-left: 0rem;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.skillcard .profskill{
+    padding-top: 50px;
+    padding-left: 0rem;
+    width: 500px;
+    padding-bottom: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profskill.pbox
+{
+    position: relative;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.profskill .pbox h4
+{
+ text-transform: uppercase;
+ color: #848C99;
+ font-weight: 300;
+}
+.profskill .pbox .percent
+{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #f0f0f0d2;
+}
+.profskill .pbox .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f0;
+}
+.skillcard .col-md-4{
+    margin-left: 400px;
+}
+.skillcard .col-md-8{
+   padding-top: 20px;
+   margin-left: 400px;
 }
 
 /*footer styling*/
@@ -451,13 +468,109 @@ footer .svg-inline--fa:hover{
       nav li {
         margin: 0.8em 0;
       }
-    .container-resume{
-        width: auto;
-        height: inherit;
-       align-self: start;
-       flex-direction: inherit;
+    
+    .skillcard{
+        margin-left: 40px;
+        height: 1500px;
+        width: 400px;
+
+    }
+    .skillcard .profskill{
+        padding-top: 50px;
+        padding-left: 50px;
+        width: 10px;
+        padding-bottom: 10px;
+    }
+    .aboutcard{
+        margin-left: 40px;
+        height: 1500px;
+        width: 400px;
+       
+    }
+    .aboutcard .col-md-8{
+        padding-left: 50px;
+        padding-top: 30px;
+        width: 1000px;
+        padding-bottom: 10px;
+        height: 500px;;
+    }
+    .aboutcard .card{
+        margin-left: 0rem;
+        width: 400px;
+       
+    }
+    .input-field{
+        width: 300px;
+        height: 40px;
+        margin-top: 20px;
+        padding-left: 5px;
+        padding-right: 10px;
+        
+        border-radius: 14px;
+        outline: none;
+       
+    }
+    .textarea-field{
+        height: 150px;
+        padding-top: 10px;
+    }
+    .lead{
+        text-align: center;
+        font-size: 500px;
+        color: rgb(10, 10, 12);
+        font-weight: 400px;
+    }
+    .text-center{
+        padding-top: 30px;
+        bottom: 40px;
        margin-left: 0rem;
     }
+    /*skills*/
+    .skillcard .profskill{
+        margin-left: 10px;
+        width: 20px;
+        padding-left: 20px;
+       
+    }
+    .profskill.pbox
+    {
+        width: 50px;
+    }
+    .profskill .pbox h4
+    {
+     text-transform: uppercase;
+     color: #848C99;
+     font-weight: 300;
+    }
+    .profskill .pbox .percent
+    {
+        position: relative;
+        width: 100%;
+        height: 15px;
+    }
+    .profskill .pbox .percent div
+    {
+        position: absolute;
+        width: 20px;
+        height: 50px;
+        background: #03a9f0;
+        padding-left: 0rem;
+    }
+    .skillcard .col-md-4{
+        margin-left: 10px;
+    }
+    .skillcard .col-md-8{
+       padding-top: 20px;
+       margin-left: 20px;
+    }
+      /*resume*/
+      .container-resume{
+        width: 0rem;
+        height: 2500px;
+        margin-left: 0rem;
+       
+    }
+
     
 }
 @media (max-width: 767.98px){
