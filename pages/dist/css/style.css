@@ -576,6 +576,7 @@ footer .svg-inline--fa:hover{
     .aboutcard{
     margin-left:0rem;
     width: 350px;
+    padding-left: 0rem;
    
 }
     
@@ -584,8 +585,6 @@ footer .svg-inline--fa:hover{
     
      width: 200px;
      height: 300px;
-     padding-right: 2px;
-     padding-left: 2px;
      text-align: center;
      
 }
