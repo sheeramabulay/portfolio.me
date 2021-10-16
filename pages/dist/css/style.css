@@ -578,6 +578,12 @@ footer .svg-inline--fa:hover{
     width: 300px;
    
 }
+   .aboutcard .imagebox{
+    width: 150px;
+    height: 200px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
     
 
      .aboutcard .col-md-8{
